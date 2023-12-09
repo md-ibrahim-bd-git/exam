@@ -1,0 +1,210 @@
+
+@keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInRight {
+    100% {
+      transform: translateX(0);
+    }
+    0% {
+      transform: translateX(100%);
+    }
+  }
+
+  h1 {
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: slideInLeft;
+
+    padding-top: 30px;
+    padding-bottom: 29px;
+  }
+
+  .p1 {
+       padding-bottom: 40px;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: slideInRight;
+    padding-right: 40px;
+    padding-left: 40px;
+  
+    
+  }
+  
+  header{
+    background-color: wheat;
+    
+  }
+    .head{
+        font-family: 'CharukolaUltraLight', sans-serif;
+text-align: center;
+color: rgb(3, 103, 150);
+padding-top: 50px;
+ 
+    }
+    #nav1, #nav2, #nav3, #nav4{
+        color: #045d89;
+    }
+    #nav2{
+        display: inline-block;
+        position: relative;
+        color: #045d89;
+      }
+      
+      #nav2:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #0087ca;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+        
+      }
+
+      
+      #nav2:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+        
+      }
+
+      #nav3{
+        display: inline-block;
+        position: relative;
+        color: #045d89;
+      }
+      
+      #nav3:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #0087ca;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+        
+      }
+
+      
+      #nav3:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+        
+      }
+
+
+      #nav1{
+        display: inline-block;
+        position: relative;
+        color: #045d89;
+      }
+      
+      #nav1:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #0087ca;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+        
+      }
+
+      
+      #nav1:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+        
+      }
+
+      .about{
+        background-color: #cbeeff;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .about h3{
+        font-family: 'CharukolaUltraLight', sans-serif ;
+        font-weight: bolder;
+        color: #045d89;
+      }
+
+      .about p{
+        font-family: 'Hind Siliguri', sans-serif;
+      }
+
+      nav{
+       
+font-family: 'Maven Pro', sans-serif;
+      }
+
+      .but{
+        height: 50px;
+        font-family: 'Maven Pro', sans-serif;
+      }
+
+      a{
+        text-decoration: none;
+      }
+
+    .container  .header{
+      margin-top: 50px;
+        border: 5px solid ;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border-top-color: #045d89;
+        border-right-color: #045d89;
+        border-bottom-color: green;
+        border-left-color: green;
+      }
+
+      .svg{
+        align-items: center;
+      justify-content: center;    display: block;
+      margin-left: auto;
+      margin-right: auto;
+  
+      }
+
+      .categories h3{
+        background-color: rgb(97, 158, 211);
+        color:white;
+        padding: 10px;
+        border: 2px solid black;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+      }
+
+
+.mc .card{
+  border-radius: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ border-top-left-radius: 30px;
+ font-family: 'CharukolaUltraLight', sans-serif;
+ font-weight: bold;
+}
+
+@import url('https://cdn.rawgit.com/sh4hids/bangla-web-fonts/sornaly/stylesheet.css');
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Mina&display=swap');

@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML form submit to Google Sheet</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <br>
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      <b>ম্যাথ অলিম্পিয়াড ৩য় আসর</b>
+    </div>
+    <div class="card-body">
+      
+      <form name="submit-to-google-sheet">
+        
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Your Username (Keep It for Exam)</label>
+          <input type="email" class="form-control" id="username"  name="Username" disabled>
+        </div>
+        
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="email" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="names" class="form-label">Name</label>
+          <input type="text" class="form-control" id="names" placeholder="Your Name" name="name" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="institute" class="form-label">Institution</label>
+          <input type="text" class="form-control" id="institute" placeholder="Your Institution" name="school" required>
+        </div>
+      
+        <div class="mb-3">
+          <label for="class" class="form-label">Class</label>
+          <input type="text" class="form-control" id="class" placeholder="Your Class" name="class" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="categor" class="form-label">Category</label>
+          <select class="form-select" aria-label="Default select example" id="categor" name="category" required>
+            <option selected disabled>Choose Your Category</option>
+            <option value="Primary">Primary (3-5)</option>
+            <option value="Junior">Junior (6-8)</option>
+            <option value="Secondary">Secondary (9-10)</option>
+            <option value="Higher Secondary">Higher Secondary (11-12)</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="class" class="form-label">Reference (If Any)</label>
+          <input type="text" class="form-control" id="class" placeholder="Your Class" name="refer" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Comment</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="comment"></textarea>
+        </div>
+        <p><b>Note: Please Wait A Few Moment After Submiting...</b></p>
+        <div class="d-grid gap-2">
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          Accordion Item #1
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          Accordion Item #2
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          Accordion Item #3
+        </button>
+      </h2>
+      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwLfKlj4OMGaAq2pev090j13q1kmt5xPUul-kiWJcEj3TVWeX0eG7mjSoke2QJMEHQB/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+	  .then(response => alert("Thank you! your form is submitted successfully." ))
+	  .then(() => { window.location.reload(); })
+	  .catch(error => console.error('Error!', error.message))
+
+    })
+  </script>
+
+  <script>
+    // Function to generate a random 6-digit integer
+    function generateRandomNumber() {
+        return Math.floor(100000 + Math.random() * 900000);
+    }
+
+    // Get the input element
+    var randomNumberInput = document.getElementById("username");
+
+    // Generate a random number and set it as the input value
+    randomNumberInput.value = generateRandomNumber();
+</script>
+</body>
+
+</html>

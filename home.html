@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mina&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.maateen.me/charu-chandan-3d/font.css" rel="stylesheet">
+    <link href="https://fonts.maateen.me/charukola-ultra-light/font.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Maven+Pro:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  100% {
+    transform: translateX(0);
+  }
+  0% {
+    transform: translateX(100%);
+  }
+}
+
+h1 {
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-name: slideInLeft;
+
+  padding-top: 30px;
+  padding-bottom: 29px;
+}
+
+.p1 {
+     padding-bottom: 40px;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-name: slideInRight;
+  padding-right: 40px;
+  padding-left: 40px;
+
+  
+}
+
+header{
+  background-color: wheat;
+  
+}
+  .head{
+      font-family: 'CharukolaUltraLight', sans-serif;
+text-align: center;
+color: rgb(3, 103, 150);
+padding-top: 50px;
+
+  }
+  #nav1, #nav2, #nav3, #nav4{
+      color: #045d89;
+  }
+  #nav2{
+      display: inline-block;
+      position: relative;
+      color: #045d89;
+    }
+    
+    #nav2:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #0087ca;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+      
+    }
+
+    
+    #nav2:hover:after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+      
+    }
+
+    #nav3{
+      display: inline-block;
+      position: relative;
+      color: #045d89;
+    }
+    
+    #nav3:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #0087ca;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+      
+    }
+
+    
+    #nav3:hover:after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+      
+    }
+
+
+    #nav1{
+      display: inline-block;
+      position: relative;
+      color: #045d89;
+    }
+    
+    #nav1:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #0087ca;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+      
+    }
+
+    
+    #nav1:hover:after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+      
+    }
+
+    .about{
+      background-color: #cbeeff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .about h3{
+      font-family: 'CharukolaUltraLight', sans-serif ;
+      font-weight: bolder;
+      color: #045d89;
+    }
+
+    .about p{
+      font-family: 'Hind Siliguri', sans-serif;
+    }
+
+    nav{
+     
+font-family: 'Maven Pro', sans-serif;
+    }
+
+    .but{
+      height: 50px;
+      font-family: 'Maven Pro', sans-serif;
+    }
+
+    a{
+      text-decoration: none;
+    }
+
+  .container  .header{
+    margin-top: 50px;
+      border: 5px solid ;
+      border-top-right-radius: 50px;
+      border-bottom-left-radius: 50px;
+      border-top-color: #045d89;
+      border-right-color: #045d89;
+      border-bottom-color: green;
+      border-left-color: green;
+    }
+
+    .svg{
+      align-items: center;
+    justify-content: center;    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    }
+
+    .categories h3{
+      background-color: rgb(97, 158, 211);
+      color:white;
+      padding: 10px;
+      border: 2px solid black;
+      border-top-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+    }
+
+
+.mc .card{
+border-radius: 0;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+border-top-left-radius: 30px;
+font-family: 'CharukolaUltraLight', sans-serif;
+font-weight: bold;
+}
+
+@import url('https://cdn.rawgit.com/sh4hids/bangla-web-fonts/sornaly/stylesheet.css');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Mina&display=swap');
+
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="img/logo.png" style="max-width: 80px;" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" class="nav "  id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" id="nav1" aria-current="page" href="#"><b>Home</b></a>
+              </li>
+              <li class="nav-item dropdown">
+            <a style="color: #045d89;" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              About
+            </a>
+            <ul class="dropdown-menu">
+              
+              <li><a class="dropdown-item" href="#" id="nav2">About The Event</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#" id="nav2">Ambassadors</a></li>
+              <li><a class="dropdown-item" href="#" id="nav2">Partners</a></li>
+              <li><a class="dropdown-item" href="#" id="nav2">Club Ambassadors</a></li>
+            </ul>
+          </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="nav3">Results</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="nav3">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="nav3">Rules</a>
+              </li>
+              
+            </ul>
+          </div>
+          <div class="collapse navbar-collapse justify-content-end" class="nav "  id="navbarNavDropdown">
+            <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="registration.html" id="nav3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16" >
+                <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"/>
+                <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+              </svg> Register</a>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <br><br>
+      <div class="container">
+     <div class="header">
+      <h1 class="head" ><b style="text-align: center;" >ম্যাথ অলিম্পিয়াড ৩য় আসর</b></h1>
+       <h4 style="text-align: center;font-family: 'Hind Siliguri', sans-serif;" class="p1">কই সব? ১ম, ২য় আসর পেরিয়ে এবার এলো ৩য় আসর। তোমরা প্রস্তুত তো! তো আর দেরি কেন? রেজিস্ট্রেশন করো আর শুরু করে দাও প্রস্তুতি। হয়ে যাও সেরার সেরা!!! <br><br><button class="btn btn-success" type="button">
+                <span class="spinner-grow spinner-grow-sm" aria-hidden="true"></span>
+                <span role="status">Register Now</span>
+              </button></h4>
+     </div>    
+        </div>
+<br>
+        <div class="about">
+          <div class="container">
+            <h3 class="about"> এডুকেট প্রেজেন্টস্‌ ম্যাথ অলিম্পিয়াড ৩য় আসর</h3>
+            <p class="aboutp">বিজ্ঞান ও গণিতকে সকলের মাঝে ছড়িয়ে বাংলাদেশে বেশ কিছু অনলাইন ভিত্তিক ক্লাব গড়ে উঠেছে। বাংলাদেশ এডুকেট অ্যাসোসিয়েশনও এমনই একটি ক্লাব। আগের বছর আমরা এডুকেট প্রেজেন্টস্‌ ম্যাথ অলিম্পিয়াড সিজন ১ ও ২ আয়োজন করেছি। তারই ধারাবাহিকতায় এবার নিয়ে এসেছি এডুকেট প্রেজেন্টস্‌ ম্যাথ অলিম্পিয়াডের ৩য় আসর। এ বছর আমরা একটি বিজ্ঞানেরর ইভেন্টও আয়োজন করব। <br><br>
+              এবছর রেজিস্ট্রেশন করতে নিচের বাটনে ক্লিক করতে হবে তারপর ফরমের প্রথমে দেওয়া ইউযারনেমটি.........
+
+              <br><br>
+              
+              <a href="#"><button class="btn btn-outline-primary" class="but"><b>Read More →</b></button></a>
+
+              <br><br>
+
+            </p>
+          </div>
+          
+        </div><br>
+        <div class="container">
+          <div class="categories">
+            <h3 style="text-align: center;font-family: 'Rampart One', sans-serif;">Categories</h3>
+          </div>
+          <br>
+        <div class="mc">
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col" >
+              <div class="card" align="center">
+
+                <div class="card-header" style="background-color: #045d89;border-radius:0;color:white;border-top-left-radius:30px;">
+                  <h4 style="padding-top:12px;"><b>প্রাইমারি (৩য় - ৫ম)</b></h4>
+                </div>
+                
+                <div class="card-body">
+                  <h5 class="card-title" style="font-family: 'Rampart One', sans-serif;">Card title</h5>
+                  <p class="card-text-center">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+               
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" align="center">
+                
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text-center">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" align="center">
+                
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text-center">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" align="center">
+                
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text-center">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+</div>
+        </div>
+        <br><br>
+        <footer>
+
+            <div class="footer" style=" background-color:#eeeeee; height:260px;padding-top:15px;">
+                <p style="color: rgb(0, 0, 0); text-align:center;font-weight:bold;">All right reserved <a href="https://www.facebook.com/bd.educate.assosiation" style="rgb(0, 0, 0): wheat;">©Bangladesh Educate Assosiation</a></p>
+                <hr>
+                
+              
+
+<!-- End of CuterCounter Code -->
+
+                </p><br>
+               <div class="svg" align="center">
+                <a href="https://www.facebook.com/bd.educate.assosiation"> <svg width="40" height="40" fill="blue" class="bi bi-facebook" viewBox="0 0 16 16"style="padding: 3px;">
+                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                </svg></a>
+              
+       <a href="https://m.me/bd.educate.assosiation"> <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#AE13DC" class="bi bi-messenger" viewBox="0 0 16 16" style="padding: 3px;">
+                <path d="M0 7.76C0 3.301 3.493 0 8 0s8 3.301 8 7.76-3.493 7.76-8 7.76c-.81 0-1.586-.107-2.316-.307a.639.639 0 0 0-.427.03l-1.588.702a.64.64 0 0 1-.898-.566l-.044-1.423a.639.639 0 0 0-.215-.456C.956 12.108 0 10.092 0 7.76m5.546-1.459-2.35 3.728c-.225.358.214.761.551.506l2.525-1.916a.48.48 0 0 1 .578-.002l1.869 1.402a1.2 1.2 0 0 0 1.735-.32l2.35-3.728c.226-.358-.214-.761-.551-.506L9.728 7.381a.48.48 0 0 1-.578.002L7.281 5.98a1.2 1.2 0 0 0-1.735.32z"/>
+              </svg></a>
+             
+               <a href="home.html"> <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16" style="padding: 3px;">
+                <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472M3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z"/>
+              </svg>
+    </a>
+            
+             <br>
+                    <br>
+                    <b>Developer : Md.Ibrahim</b>
+                    <p style="color: rgb(105, 105, 105); text-align:center"> <a href='#' style='color: rgb(0, 0, 0); text-align:center'><b style="color: rgb(105, 105, 105);">Supported By : Edu Team</b></a> 
+<br>
+                   </div></div>
+            
+        </footer>
+</body>
+</html>

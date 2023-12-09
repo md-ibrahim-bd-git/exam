@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@cloudinary/url-gen": "^1.14.0",
+    "bootstrap-icons": "^1.11.2"
+  }
+}
